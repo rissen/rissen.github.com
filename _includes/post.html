@@ -1,0 +1,29 @@
+<div class="post">
+	<div class="meta">
+		<div class="date">
+			<span class="month">{{page.date | date: "%b"}}. </span><span class="day">{{page.date | date: "%d"}}, </span><span class="year">{{page.date | date: "%Y"}}</span>
+		</div>
+		<div class="tags">
+			<ul>
+				<li><a href="#{{page.category}}">{{page.category}}</a></li>
+			{% for tag in page.tags %}
+				<li><a href="#">{{tag}}</a></li>
+			{% endfor%}
+			</ul>
+		</div>
+	</div>
+	<div class="post_entry">
+		<div class="post_title">
+			<h2><a href='{{page.url}}'>{{page.title}}</a></h2>
+		</div>
+		<div class="post_content">{{ content }}</div>
+	</div>
+	<div>
+		{% if page.previous %}
+    <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+    {% endif %}
+{% if page.next %}
+    <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+{% endif %}
+	</div>
+</div>
