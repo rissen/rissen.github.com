@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Next Generation China Inc</title>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$("#logo").show( "explode", 1500);
+		$("#about").show( "drop", {direction: "up" },1500);
+		$("#solution").show( "drop", 1500);
+		$("#projects").show( "drop", {direction: "right" }, 1500);
+		$("#join_us").show( "drop", {direction: "right" }, 1500);
+		$("#production").show( "drop", 1500);
+		$("#news").show( "drop", 1500);
+		$("#contact").show( "drop", {direction: "right" }, 1500);
+	});
+	</script>
+
+	<style type="text/css">
+		body{
+			background: #242424 url(images/back.jpg) top;
+			font-size: 14px;
+			margin:0;
+			padding:0;
+			color:#6e6e6e;
+			/*background-color: #000000;*/
+		}
+		a{
+			text-decoration: none;
+			color:#333333;
+		}
+		img{
+			border:none;
+		}
+		#wrapper{
+			position: absolute;
+			width:980px;
+			height:560px;
+			left:50%;
+			top:50%;
+			margin-left:-500px;
+			margin-top:-300px;
+			border: solid 3px #AAAAAA;
+		}
+		#canvas{
+			position: absolute;
+		}
+		.menu{
+			position: absolute;
+			display: none;
+			background-color: #EEEEEE;
+			font-weight: bold;
+			font-size: 14px;
+			text-align: center;
+		}
+		.menu:hover{
+			background-color: #0099CC;
+		}
+		.menu:hover a{
+			color: #FFFFFF;
+		}
+		#about{
+			top: 40px;
+			left: 440px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#solution{
+			top: 100px;
+			left: 140px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#production{
+			top: 240px;
+			left: 100px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#projects{
+			top: 100px;
+			left: 740px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#join_us{
+			top: 240px;
+			left: 780px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#news{
+			top: 380px;
+			left: 140px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#contact{
+			top: 380px;
+			left: 740px;
+			width: 100px;
+			padding: 10px 0px;
+			z-index: 2;
+		}
+		#logo{
+			top: 210px;
+			left: 368px;
+			width:254px;
+			height:88px;
+			z-index: 1;
+		}
+		#coyright{
+			left: 20px;
+			position: absolute;
+			top: 530px;
+		}
+		#miibeian{
+			left: 840px;
+			position: absolute;
+			top: 530px;
+		}
+		
+		#footer{
+			text-align: center;
+			position: absolute;
+			bottom: 10px;
+		}
+	 </style>
+  </head>
+  <body>
+	<div id="wrapper">
+		<div id="canvas">
+			<div id="about" class="menu" title="关于我们"><a href="#">关于我们</a></div>
+			<div id="solution" class="menu" title="解决方案"><a href="#">解决方案</a></div>
+			<div id="projects" class="menu" title="成功案例"><a href="#">成功案例</a></div>
+			<div id="production" class="menu" title="产品介绍"><a href="#">产品介绍</a></div>
+			<div id="join_us" class="menu" title="加入我们"><a href="#">加入我们</a></div>
+			<div id="news" class="menu" title="最新动态"><a href="#">最新动态</a></div>
+			<div id="contact" class="menu" title="联系我们"><a href="#">联系我们</a></div>
+			<div id="logo" class="menu" title="Next G China Logo">
+			<a href="#"><img src="images/logo.jpg"></img></a>
+			</div>
+		</div>
+		<div id="coyright">Copyright &copy; 2013 Next Generation China Inc. All Rights Reserved.</div>
+		<div id="miibeian"><a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备09013927</a></div>
+			
+	</div>
+	
+  </body>
+</html>
