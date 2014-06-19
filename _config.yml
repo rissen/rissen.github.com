@@ -1,6 +1,9 @@
-markdown: kramdown
+redcarpet:
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 baseurl: /blog
 permalink: /blog/:year/:month/:day/:title.html
 pygments: true
 highlighter: pygments
+markdown: redcarpet
+
 #paginate: 3
