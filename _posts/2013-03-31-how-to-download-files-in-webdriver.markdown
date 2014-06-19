@@ -9,34 +9,32 @@ tags: [httpclient, webdriver, automation]
 How to download files with WebDriver
 
 ```java
-	package com.test;
 
-	import java.io.FileOutputStream;
-	import java.io.IOException;
-	import java.util.Set;
+package com.test;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Set;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.protocol.ClientContext;
+import org.apache.http.impl.client.BasicCookieStore;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.cookie.BasicClientCookie;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.protocol.HttpContext;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
 
-	import org.apache.http.HttpEntity;
-	import org.apache.http.HttpResponse;
-	import org.apache.http.client.HttpClient;
-	import org.apache.http.client.methods.HttpGet;
-	import org.apache.http.client.protocol.ClientContext;
-	import org.apache.http.impl.client.BasicCookieStore;
-	import org.apache.http.impl.client.DefaultHttpClient;
-	import org.apache.http.impl.cookie.BasicClientCookie;
-	import org.apache.http.protocol.BasicHttpContext;
-	import org.apache.http.protocol.HttpContext;
-	import org.openqa.selenium.Cookie;
-	import org.openqa.selenium.WebDriver;
-
-	/**
-	 * 
-	 * @author rissen
-	 * 
-	 */
-	public class HttpClientDownloader {
-		private String downloadFileFolder = "c:\\selenium\\";
+/**
+ * 
+ * @author rissen
+ * 
+*/
+public class HttpClientDownloader {
+	private String downloadFileFolder = "c:\\selenium\\";
 		private WebDriver webDriver;
-
 		public HttpClientDownloader(WebDriver webDriver) {
 			this.webDriver = webDriver;
 		}
@@ -107,4 +105,5 @@ How to download files with WebDriver
 			this.webDriver = webDriver;
 		}
 	}
+	
 ```
