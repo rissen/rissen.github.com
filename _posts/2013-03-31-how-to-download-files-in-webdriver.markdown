@@ -8,6 +8,7 @@ tags: [httpclient, webdriver, automation]
 
 How to download files with WebDriver
 
+```java
 	package com.test;
 
 	import java.io.FileOutputStream;
@@ -106,3 +107,4 @@ How to download files with WebDriver
 			this.webDriver = webDriver;
 		}
 	}
+```
