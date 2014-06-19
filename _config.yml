@@ -1,6 +1,6 @@
 markdown: kramdown
 baseurl: /blog
 permalink: /blog/:year/:month/:day/:title.html
+pygments: true
 highlighter: pygments
-#pygments: true
 #paginate: 3
