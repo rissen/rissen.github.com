@@ -8,6 +8,7 @@ tags: [testng, ant]
 
 ### References
 [TestNG - Parameters with DataProviders](http://testng.org/doc/documentation-main.html#parameters-dataproviders)
+
 [TestNG Ant Document](http://testng.org/doc/ant.html)
 
 ###parallel = true
@@ -46,6 +47,7 @@ public class DataProviderParallelTest {
 The number of threads to use for data providers for this run. Ignored unless the parallel mode is also specified.
 
 #### build.xml
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -109,6 +111,7 @@ The number of threads to use for data providers for this run. Ignored unless the
 
 </project>
 ```
+
 * *ant test*
 dataproviderthreadcount is not specified, set 1 as the default value, run datadriven test method one by one.
 * *ant test -DdataProviderThreadCount 4*
