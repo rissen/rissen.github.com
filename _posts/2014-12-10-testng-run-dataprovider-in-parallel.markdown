@@ -113,6 +113,8 @@ The number of threads to use for data providers for this run. Ignored unless the
 ```
 
 * *ant test*
+
 dataproviderthreadcount is not specified, set 1 as the default value, run datadriven test method one by one.
 * *ant test -DdataProviderThreadCount 4*
+
 dataproviderthreadcount is 4, using 4 threads run datadirven test method.
