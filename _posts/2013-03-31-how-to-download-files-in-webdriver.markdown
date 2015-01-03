@@ -6,6 +6,8 @@ category: codes
 tags: [httpclient, webdriver, automation]
 ---
 
+# Download files using httpclient in WebDriver
+
 ```java
 
 package com.test;

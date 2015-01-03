@@ -6,6 +6,8 @@ category: testng
 tags: [testng, ant]
 ---
 
+# TestNG run dataprovider in parallel
+
 ### References
 [TestNG - Parameters with DataProviders](http://testng.org/doc/documentation-main.html#parameters-dataproviders)
 
@@ -42,6 +44,7 @@ public class DataProviderParallelTest {
 	}
 }
 ```
+
 
 ### Ant parameter -dataProviderThreadCount.
 The number of threads to use for data providers for this run. Ignored unless the parallel mode is also specified.
