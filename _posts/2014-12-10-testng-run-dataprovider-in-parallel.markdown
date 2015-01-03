@@ -8,12 +8,12 @@ tags: [testng, ant]
 
 # TestNG run dataprovider in parallel
 
-### References
+## References
 [TestNG - Parameters with DataProviders](http://testng.org/doc/documentation-main.html#parameters-dataproviders)
 
 [TestNG Ant Document](http://testng.org/doc/ant.html)
 
-###parallel = true
+## parallel = true
 Data providers can run in parallel with the attribute parallel. Set parallel = true for DataProvider Annotation.
 
 ```java
@@ -46,10 +46,10 @@ public class DataProviderParallelTest {
 ```
 
 
-### Ant parameter -dataProviderThreadCount.
+## Ant parameter -dataProviderThreadCount.
 The number of threads to use for data providers for this run. Ignored unless the parallel mode is also specified.
 
-#### build.xml
+### build.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
