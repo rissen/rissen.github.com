@@ -102,7 +102,7 @@ The number of threads to use for data providers for this run. Ignored unless the
 				<property name="specifiedDataProviderThreadCount" value="${dataProviderThreadCount}" />
 			</then>
 			<else>
-				<!-- if dataProviderThreadCount is not set, than set specifiedDataProviderThreadCount = 1-->
+				<!-- if dataProviderThreadCount is not set, then set specifiedDataProviderThreadCount = 1-->
 				<property name="specifiedDataProviderThreadCount" value="1" />
 			</else>
 		</if>
