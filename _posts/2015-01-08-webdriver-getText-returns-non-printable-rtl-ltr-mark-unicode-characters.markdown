@@ -12,7 +12,8 @@ This issue occurs on Chrome webdriver, Firefox webdriver works well.
 ## workaround
 Replace all RTL/LTR characters with an empty character("").
 
-Java code snippet
+Java code snippet:
+
 ```java
 //&lrm; Java source code
 String lrm = "\u200e";
