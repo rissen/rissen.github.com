@@ -8,11 +8,6 @@ tags: [testng, ant]
 
 # TestNG run dataprovider in parallel
 
-## References
-[TestNG - Parameters with DataProviders](http://testng.org/doc/documentation-main.html#parameters-dataproviders)
-
-[TestNG Ant Document](http://testng.org/doc/ant.html)
-
 ## parallel = true
 Data providers can run in parallel with the attribute parallel. Set parallel = true for DataProvider Annotation.
 
@@ -115,11 +110,16 @@ The number of threads to use for data providers for this run. Ignored unless the
 </project>
 ```
 
-* *ant test*
+- *ant test*
 
 dataproviderthreadcount is not specified, set 1 as the default value, run datadriven test method one by one.
 
-* *ant test -DdataProviderThreadCount 4*
+- *ant test -DdataProviderThreadCount 4*
 
 dataproviderthreadcount is 4, using 4 threads run datadirven test method.
+
+
+## References
+- [TestNG - Parameters with DataProviders](http://testng.org/doc/documentation-main.html#parameters-dataproviders)
+- [TestNG Ant Document](http://testng.org/doc/ant.html)
 
