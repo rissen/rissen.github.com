@@ -10,7 +10,7 @@ tags: [xpath]
 
 ## Remove whitespace, normalize-space()
 
-```
+```xpath
 //span[normalize-space(.)='text a']
 ```
 
