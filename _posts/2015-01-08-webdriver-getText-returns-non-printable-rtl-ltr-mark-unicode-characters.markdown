@@ -33,6 +33,7 @@ html:
 ```
 
 output:
+
 ```
 text:Hello‏ World‎:
 length:13
@@ -40,8 +41,8 @@ length:11
 ```
 
 ## References
-[W3C H34](http://www.w3.org/TR/WCAG20-TECHS/H34.html)
-[LRM unicode character](http://www.fileformat.info/info/unicode/char/200e/index.htm)
-[RLM unicode character](http://www.fileformat.info/info/unicode/char/200f/index.htm)
-[webdriver issue link](https://code.google.com/p/selenium/issues/detail?id=4473)
+- [W3C H34](http://www.w3.org/TR/WCAG20-TECHS/H34.html)
+- [LRM unicode character](http://www.fileformat.info/info/unicode/char/200e/index.htm)
+- [RLM unicode character](http://www.fileformat.info/info/unicode/char/200f/index.htm)
+- [webdriver issue link](https://code.google.com/p/selenium/issues/detail?id=4473)
 
