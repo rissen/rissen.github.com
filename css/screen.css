@@ -20,6 +20,7 @@ body {
   font: 14px 'Palatino','Georgia','STHeiti','Hiragino Sans GB','Hei','Microsoft YaHei',serif;
   *font-size: small;
   text-align: left;
+  color: #666666;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,7 +98,6 @@ ul.posts {
 }
 
   .site .title a {
-    color: #a00;
     text-decoration: none;
   }
 
@@ -106,7 +106,6 @@ ul.posts {
   }
 
   .site .title a.extra {
-    color: #aaa;
     text-decoration: none;
     margin-left: 1em;
   }
