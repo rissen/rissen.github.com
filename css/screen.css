@@ -32,6 +32,9 @@ h1 {
   font-size:110%;
   font-weight:900;
 }
+h2 {
+	margin: 1em;
+}
 
 p {
   margin: 1em 0;
