@@ -20,7 +20,7 @@ tags: [xpath]
 //table/tbody/tr/td[count(//table/thead/tr/th[.="column header"]/preceding-sibling::th)+1]
 ```
 
-## Contains a whole word, class attribute conatians a className1
+## Contains a whole word, class attribute conatians className1
 ```
 //div[contains(concat(' ',normalize-space(@class), ' '),' className1 ')]
 ```
