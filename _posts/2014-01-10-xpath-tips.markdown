@@ -29,8 +29,7 @@ tags: [xpath]
 ```
 Selecting siblings between <li>B</li> and <li>F</li>
 //li[.='B']/following-sibling::li[.='F']/preceding-sibling::li[preceding-sibling::li[.='B']]
-```
-```
+
 <ul>
 <li>A</li>
 <li>B</li>
