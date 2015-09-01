@@ -39,6 +39,12 @@ Selecting siblings between <li>B</li> and <li>F</li>
 <li>F</li>
 </ul>
 ```
+
+## Changing text to upper case or lower case
+```
+//span[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')=translate('Home', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')]
+```
+
 ## References
 [XPath Functions](http://www.w3schools.com/xpath/xpath_functions.asp)
 
