@@ -178,13 +178,11 @@ ul.posts {
 
 
   #post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0; 
-    font-size: inherit; 
-    color: inherit; 
-    white-space: pre-wrap; 
-    background-color: transparent; 
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
     border-radius: 0;
   }
 
