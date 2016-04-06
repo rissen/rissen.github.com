@@ -165,23 +165,27 @@ ul.posts {
   }
 
   #post pre {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    background-color: #eef;
-    padding: .5em .4em .5em;
-    overflow: auto;
+    display: block; 
+    padding: 13px; 
+    margin: 0 0 13.5px; 
+    font-size: 14px; 
+    line-height: 1.8; 
+    word-break: break-all; 
+    word-wrap: break-word; color: #555; 
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc; border-radius: 4px;
   }
 
 
   #post code {
     border: 1px solid #ddd;
     background-color: #eef;
-    padding: 0;
-  }
-
-  #post pre code {
-     border: none;
-    font-size: 80%;
+    padding: 0; 
+    font-size: inherit; 
+    color: inherit; 
+    white-space: pre-wrap; 
+    background-color: transparent; 
+    border-radius: 0;
   }
 
   /* terminal */
