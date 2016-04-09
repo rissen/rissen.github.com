@@ -54,13 +54,26 @@ vpn2	pptpd	vpn2Pwd	192.168.0.236
 sudo service pptpd start
 ```
 
-## 转发设置
+## 转发IP设置
+编辑/etc/sysctl.conf
+
 ```cmd
-iptables -t nat -F
+sudo vim /etc/sysctl.conf
+```
+取消注释下面的行
+
+```cmd
+net.ipv4.ip_forward=1
 ```
 
--s后面的ip是上面remoteip 段的ip
+生效转发配置
 
+```cmd
+sudo sysctl -p
+```
+
+配置iptables
+-s后面的ip是上面remoteip 段的ip
 --to后面跟着的ip地址是上面设置的localip
 
 ```cmd
