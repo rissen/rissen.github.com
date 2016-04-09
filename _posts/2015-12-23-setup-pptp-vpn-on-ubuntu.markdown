@@ -18,7 +18,9 @@ sudo apt-get install pptpd
 ```
 sudo vim /etc/pptpd.conf
 ```
-localip是主机的ip,如果是租用的vps，则是vps的公网ip
+
+localip是主机的ip,如果是租用的vps,则是vps的公网ip
+
 ```
 localip 192.162.59.61
 remoteip 192.168.0.234-240,192.168.0.245
@@ -27,6 +29,7 @@ remoteip 192.168.0.234-240,192.168.0.245
 ```
 sudo vim /etc/ppp/pptpd-options
 ```
+
 ```
 ms-dns 8.8.8.8
 ```
@@ -35,7 +38,9 @@ ms-dns 8.8.8.8
 ```
 sudo vim /etc/ppp/chap-secrets
 ```
+
 配置了2个账号，用户名分别是vpn1,vpn2,密码是vpn1Pwd,分别分配了ip 192.168.0.235,192.168.0.235.
+
 ```
 # Secrets for authentication using CHAP
 # client	server	secret			IP addresses
@@ -54,6 +59,7 @@ iptables -t nat -F
 ```
 -s后面的ip是上面remoteip 段的ip
 --to后面跟着的ip地址是上面设置的localip
+
 ```
 iptables -t nat -A POSTROUTING -s 192.168.0.235,192.168.0.236 -j SNAT --to 192.162.59.61
 ```
