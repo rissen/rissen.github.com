@@ -25,7 +25,8 @@ localip是主机的ip,如果是租用的vps,则是vps的公网ip
 localip 192.162.59.61
 remoteip 192.168.0.234-240,192.168.0.245
 ```
-## 修改dnsu,使用的google dns
+
+## 修改dns,使用的google dns
 ```
 sudo vim /etc/ppp/pptpd-options
 ```
@@ -57,6 +58,7 @@ sudo service pptpd start
 ```
 iptables -t nat -F
 ```
+
 -s后面的ip是上面remoteip 段的ip
 --to后面跟着的ip地址是上面设置的localip
 
