@@ -73,7 +73,9 @@ sudo sysctl -p
 ```
 
 配置iptables
+
 -s后面的ip是上面remoteip 段的ip
+
 --to后面跟着的ip地址是上面设置的localip
 
 ```cmd
