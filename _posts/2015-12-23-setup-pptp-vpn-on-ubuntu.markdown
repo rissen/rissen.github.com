@@ -6,7 +6,7 @@ category: linux
 tags: [vpn,pptp]
 ---
 
-# Uubuntu搭建PPTP VPN
+# ubuntu搭建PPTP VPN
 
 ## 安装pptpd
 ```cmd
