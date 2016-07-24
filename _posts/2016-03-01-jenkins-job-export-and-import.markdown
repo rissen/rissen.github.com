@@ -9,6 +9,7 @@ tags: [jenkins]
 # Jenkins job export and import
 
 1 Download jenkins-cli.jar from jenkins server via http://jenkinsserver/jnlpJars/jenkins-cli.jar
+
 2 export job
 
 ```cmd
