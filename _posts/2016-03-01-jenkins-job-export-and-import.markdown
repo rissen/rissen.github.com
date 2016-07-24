@@ -8,12 +8,15 @@ tags: [jenkins]
 
 # Jenkins job export and import
 
-* Download jenkins-cli.jar from jenkins server via http://jenkinsserver/jnlpJars/jenkins-cli.jar
-* export job
+1 Download jenkins-cli.jar from jenkins server via http://jenkinsserver/jnlpJars/jenkins-cli.jar
+2 export job
+
 ```cmd
 java -jar jenkins-cli.jar -s http://jenkinsserver get-job myJob > myJob.xml
 ```
-* import job
+
+3 import job
+
 ```cmd
 java -jar jenkins-cli.jar -s http://jenkinsserver create-job myJob < myJob.xml
 ```
