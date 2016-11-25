@@ -1,3 +1,13 @@
+---
+layout: posts
+title: "TestNG执行测试用例OOM简单分析"
+description: "TestNG执行测试用例OOM简单分析"
+category: codes
+tags: [testNG, java, oom]
+---
+
+# TestNG执行测试用例OOM简单分析
+
 最近有个模块的web自动化测试Jenkins Job跑着跑着就OOM，使用的TestNG + WebDriver， 之前这个模块也偶尔遇到过OOM的问题，每次都是调整heap，已经调整到1536了，奇怪的是那么多模块，就单单那一个模块会OOM。鉴于之前屡次遇到OOM的问题，早先已在ant build.xml里TestNG对应的 HeapDumpOnOutOfMemoryError参数给加上了，一旦OOM发生了就会生成 heap dump，如"Dumping heap to java_pid2262.hprof ..."。
 
 ```
@@ -35,7 +45,7 @@ protected final EC2UniqueEmployee manager = new EC2UniqueEmployee("xxx","xxx","x
 protected final static EC2UniqueEmployee manager = new EC2UniqueEmployee("xxx","xxx","xxx");
 ```
 
-![image](../images/mat_overview.png)
+![image](/public/upload/mat_overview.png)
 
-![image](../images/mat_histogram.png)
+![image](/public/upload/mat_histogram.png)
 
